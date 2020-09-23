@@ -1,0 +1,38 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+.config/
+
+# Visual Studio Code
+.vscode
+
+# Web
+App_Data/
+**/BlazorGulpTailwindApp/wwwroot/css/site.css
+**/BlazorGulpTailwindApp/wwwroot/css/site.css.map
+
+# Node.js
+node_modules/
+
+# System Files
+Thumbs.db

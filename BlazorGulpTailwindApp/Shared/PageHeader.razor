@@ -1,0 +1,39 @@
+﻿<header class="bg-green-100 border-b sticky top-0">
+    <div class="container mx-auto flex w-full relative">
+        <NavLink href="" Match="NavLinkMatch.All" class="ml-1 px-3 bg-blue-200 hover:bg-blue-300 rounded-lg block whitespace-no-wrap">My Site</NavLink>
+
+        <div class="absolute right-0 mt-8 mr-2 md:static md:mt-0 md:mr-0">
+            <nav class="flex flex-col @menuHidden bg-green-100 border md:flex md:flex-row md:bg-transparent md:border-0">
+                <NavLink href="" Match="NavLinkMatch.All">Home</NavLink>
+                @*<AuthorizeView>
+                        <NavLink href="/secretplace" Match="NavLinkMatch.All">Secret Place</NavLink>
+                    </AuthorizeView>*@
+                <NavLink href="/counter" Match="NavLinkMatch.All">Counter</NavLink>
+                <NavLink href="/fetchdata" Match="NavLinkMatch.All">Fetch Data</NavLink>
+                <NavLink href="/about" Match="NavLinkMatch.All">About</NavLink>
+            </nav>
+        </div>
+
+        <div class="flex w-full justify-end">
+            @*<LoginDisplay />*@
+            <button @onclick="ToggleMenu" class="md:hidden">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                          d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+@code
+{
+    private bool isMenuHidden = true;
+    private string menuHidden = "hidden";
+
+    private void ToggleMenu()
+    {
+        isMenuHidden = !isMenuHidden;
+        menuHidden = isMenuHidden ? "hidden" : "";
+    }
+}
