@@ -22,8 +22,8 @@ This Blazor server web application demonstrates how to use Gulp to automate crea
 
 ### Using
 
-- Visual Studio v16.8 Preview 3.1
-- .NET 5.0-rc.1
+- Visual Studio v16.8
+- .NET 5.0
 
 ### Task Runner Explorer
 
