@@ -2,6 +2,15 @@
 
 This Blazor server web application demonstrates how to use Gulp to automate creating [Tailwind CSS](https://tailwindcss.com/) into wwwroot/site.css.
 
+### After cloning the project, do this
+
+- Install [Node.js](https://nodejs.org)
+- Change to the BlazorGulpTailwindApp project folder.
+- npm install npm@latest -g
+- Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+- npm install
+- VS > Task Runner Explorer > css:dev > Run - This will create the dev version of the site.css
+
 ### Changed
 
 - Remove the bootstrap from Pages/_Host.cshtml and wwwroot/css
@@ -15,12 +24,6 @@ This Blazor server web application demonstrates how to use Gulp to automate crea
 
 - Visual Studio v16.8 Preview 3.1
 - .NET 5.0-rc.1
-
-### NPM
-
-- Install [Node.js](https://nodejs.org)
-- Run "npm install" inside the project.
-- Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 ### Task Runner Explorer
 
